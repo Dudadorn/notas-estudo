@@ -1,0 +1,92 @@
+## REVISÃO
+
+HTML- Marcação
+SCC -  enfeitar 
+JS -  manipular o DOM 
+
+## ALERT:
+serve para exibir uma mensagem
+- Não recebe resposta
+- Bloqueia a tela até o usuario confirma 
+- ideal para exemplos simples e aprendizagem 
+
+detalhe:
+o código para e espera i usuário
+
+## PROMPT:
+ele ira nos permitir realizar duas ações
+- mostra uma pergunta
+- recebe uma resposta do usuário
+
+detalhe importante:
+toda reposta do prompt é texto (script), mesmo que o usuário digite um número.
+
+## PROMPT + VARIÁVEIS
+aqui nasce algo poderoso:guardar respostas.
+- o valor digitais digitados pode ser armazenados 
+- variáveis passam a ter significado real
+- o codigo começa a reagir ao usuario sem varialvel, a resposta se perde.
+
+## GETELEMENTBYID
+função: retorna uma referencia ao elemento pelo seu ID 
+Uso principal; selecionar elementos unicos em uma página para manipulação ou leitura de dados.
+cosnt element = document.getElememntbtId('my-element');
+element.style.color= 'blue'
+
+## CREATEELEMENT
+função: cria um novo elemento HTML
+Uso principal: adicionar novos elementos á página dinamicamente.
+cosn newDiv = document.createElement('div');
+bewDiv.textContent = 'hello, world!';
+document.body.appendchild(newDiv).
+
+## APPENDCHILD
+Função: adiciona um nó ( elemneto) como o último filho de um elemento pai especificado.
+Uso peincipal: inserir elementos novos ou existentes na árvore DOM
+const parent = document.getElementById('parent-element');
+const child = document.createelement('p');
+child.textContent = 'this is a new paragraph';
+parent.appendChild(child);
+
+## CLICK
+didparado quando um elemento é clicado
+const button = document.getElementById('my-button');
+button.addEventListener('click', () => {alert('button was clicked');
+});
+
+## FUNÇÃO
+por hora serão utilizadas apenas para reaproveitar código.
+são declaradas da seguinte forma:
+>function exemplo () {...
+}
+const buttonExercicio3 = document.getElementById("exercicio3")
+buttonExercicio3.addEventListener('click', () => {exemplo()})
+
+## IF/ELSE
+o if e else são condicionais que permitem executar diferentes blocos de código com base em uma condição ou expressão booleana.
+
+maria62065166@JLE106D060761 MINGW64 ~
+$ cd Documents/
+
+maria62065166@JLE106D060761 MINGW64 ~/Documents
+$ git clone git@github.com:Dudadorn/OutroRepo.git
+Cloning into 'OutroRepo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+maria62065166@JLE106D060761 MINGW64 ~/Documents
+$ cd OutroRepo/
+
+maria62065166@JLE106D060761 MINGW64 ~/Documents/OutroRepo (main)
+$ code .
+
+
+function exercicio1() {
+    alert("OIE")
+}
+// getElement
+const batata = document.getElementById("exercicio1")
+// addEventlistner
+batata.addEventListener('click', () => { exercicio1() })
