@@ -148,15 +148,16 @@ Vai no terminal digite npm o react-router-dom
 Depois vai na seta pra baixo e clica em git bash 
 Em seguida vai em package.json e confere se foi depois crie uma pasta dentro  da pasta src com o nome pages 
 Destro da pasta pages crie uma pasta com o nome About e Home dentro dessas pasta coloque uma pasta chamada índex.jsx e contra com o nome style.css
-Depois vai em Main.jsx e nomeio dos códigos  StrictMode e App coloque o código <BrowserRouter>
+Depois vai em Main.jsx e nomeio dos códigos  StrictMode e App coloque o código 
+<.BrowserRouter>
 Depois vai em App.jsx
-Apaga o list e coloca <Rautes> e <Raute path =“/“ element ={Home} />
+Apaga o list e coloca <.Rautes> e <.Raute path =“/“ element ={Home} />
 Abra a pasta Home e abra a pasta índex.jsx
 Escreva import ‘./style.css’;
 Function Home() {
 Return ( 
 <>
-<h2> Bem vindo ao meu sistema </h2>
+<.h2> Bem vindo ao meu sistema </.h2>
 </>
 )
 }
